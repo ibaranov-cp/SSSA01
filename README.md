@@ -10,8 +10,6 @@ For Husky instructions and tutorials, please see http://wiki.ros.org/Robots/Husk
 
 For this installation, local (user laptop for example) pre-requisites can be installed with:
 ```
-rosdep install robotiq_modbus_tcp
-sudo apt-get install ros-indigo-soem -y
 sudo apt-get install ros-indigo-ur-modern-driver -y
 sudo apt-get install ros-indigo-moveit-planners* -y
 sudo apt-get install ros-indigo-moveit-ros-planning* -y
@@ -48,6 +46,3 @@ roslaunch sssa01_moveit moveit_rviz.launch
 Be sure to try out different planners, as some are significantly faster and more efficient than others.
 
 ![](http://i.imgur.com/tzbjJ6M.png)
-
-Notes:
-The Robotiq gripper fingers cannot be accurately simulated, as they are not sensored. It is suggested to keep the gripper closed if movements near the UR arm (self intersection) are being done.
